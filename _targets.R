@@ -14,6 +14,9 @@ tar_option_set(
 
 tar_source()
 
+# need to download data an reactivate parse_uom_surveys in parse_all_surveys
+
+
 list(
   tar_target(
     dates,
@@ -24,6 +27,12 @@ list(
     )
   ),
 
+  tar_target(
+    micro_dat,
+    microdistancing_data(
+      dates = dates
+    )
+  ),
 
   tar_target(
     pointless_end_target,

@@ -16,7 +16,7 @@ parse_doh_survey <- function(filename) {
       wave = wave_from_file(filename),
       state = abbreviate_states(S3),
       city = Location == "Major city",
-      parent = Q39 %in% parenty_households,
+      parent = Q39 %in% parenty_households(),
       distancing_any = NA,
       cough_any = NA,
       mask = NA,

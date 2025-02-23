@@ -7,11 +7,7 @@ microdistancing_data <- function(dates = NULL) {
 
   # use dates from start of distancing to present if no others are specified
   if (is.null(dates)) {
-    dates <- seq(
-      min(distancing$date),
-      Sys.Date(),
-      by = 1
-    )
+    stop("dates are missing and must be supplied")
   }
 
   survey <- hygiene_data() %>%
