@@ -5,7 +5,10 @@ tar_option_set(
   packages = c(
     "dplyr",
     "mgcv",
-    "readr"
+    "readr",
+    "tidyr",
+    "purrr",
+    "readxl"
   )
 )
 
