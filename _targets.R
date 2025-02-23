@@ -8,7 +8,9 @@ tar_option_set(
     "readr",
     "tidyr",
     "purrr",
-    "readxl"
+    "readxl",
+    #"greta",
+    "cowplot"
   )
 )
 
@@ -31,6 +33,13 @@ list(
     micro_dat,
     microdistancing_data(
       dates = dates
+    )
+  ),
+
+  tar_target(
+    micro_results,
+    microdistancing_model_fit_and_predict(
+      data = micro_dat
     )
   ),
 

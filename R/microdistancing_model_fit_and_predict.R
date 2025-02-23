@@ -4,10 +4,7 @@ microdistancing_model_fit_and_predict <- function(
 
 
   survey_distance <- data$survey_distance
-  pred_data <- data$prediction_data #%>%
-  #mutate(date_num = as.numeric(date_num))
-
-
+  pred_data <- data$prediction_data
 
   min_date <- min(survey_distance$date)
   max_date <- max(survey_distance$date)
@@ -122,15 +119,11 @@ microdistancing_model_fit_and_predict <- function(
       )
     )
 
-
-
   df_mic <- full_join(
     df_fit,
     df_pred,
     by = "state"
   )
-
-
 
 
   survey_fit <- mapply(
@@ -209,13 +202,11 @@ microdistancing_model_fit_and_predict <- function(
       upper = cis[, 2] * 100
     )
 
-  # save these fits for plotting later
-  module(line_df, point_df) %>%
-    saveRDS("outputs/micro_plotting_data.RDS")
+  # # save these fits for plotting later
+  # module(line_df, point_df) %>%
+  #   saveRDS("outputs/micro_plotting_data.RDS")
 
-
-
-  base_colour <- purple
+  base_colour <- purple()
 
   p <- ggplot(line_df) +
 
