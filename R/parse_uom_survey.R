@@ -13,6 +13,7 @@ parse_uom_survey <- function(filename, wave = NA) {
   # read the file and skip the second row (full questions)
   read_xlsx(filename, col_types = "text")[-1, ] %>%
     map(~parse_guess(.)) %>%
+    as_tibble() |>
     mutate(
       wave = wave,
       state = abbreviate_states(state),

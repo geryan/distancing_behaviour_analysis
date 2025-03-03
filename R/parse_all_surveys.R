@@ -1,6 +1,6 @@
 parse_all_surveys <- function() {
   bind_rows(
-    #parse_all_uom_surveys(),
+    parse_all_uom_surveys(),
     parse_barometer(),
     parse_all_doh_surveys()
   ) %>%

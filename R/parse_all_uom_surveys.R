@@ -1,4 +1,4 @@
-parse_all_uom_surveys <- function(dir = "~/not_synced/uom_surveys/unlocked") {
+parse_all_uom_surveys <- function(dir = "data/uom_surveys/unlocked") {
 
   dir %>%
     file.path(
