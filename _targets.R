@@ -10,6 +10,7 @@ tar_option_set(
     "purrr",
     "readxl",
     #"greta",
+    "ggplot2",
     "cowplot"
   )
 )
