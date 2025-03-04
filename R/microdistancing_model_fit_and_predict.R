@@ -2,7 +2,6 @@ microdistancing_model_fit_and_predict <- function(
   data
 ){
 
-
   survey_distance <- data$survey_distance
   pred_data <- data$prediction_data
 
