@@ -261,7 +261,7 @@ microdistancing_model_fit_and_predict <- function(
     geom_errorbar(
       aes(date, percentage, ymin = lower, ymax = upper),
       data = point_df,
-      size = 1,
+      linewidth = 1,
       alpha = 0.2,
       width = 0
     ) +
@@ -321,23 +321,6 @@ microdistancing_model_fit_and_predict <- function(
           axis.title.y.right = element_text(vjust = 0.5, angle = 90),
           panel.spacing = unit(1.2, "lines"),
           axis.text.x = element_text(size = 7)) +
-    #
-    # # add empirical percentages
-    # geom_point(
-    #   aes(date, percentage),
-    #   data = point_df,
-    #   size = 2,
-    #   pch = "_"
-    # ) +
-    #
-    # geom_errorbar(
-    #   aes(date, percentage, ymin = lower, ymax = upper),
-    #   data = point_df,
-    #   size = 1,
-    #   alpha = 0.2,
-    #   width = 0
-    # ) +
-    #
     # and titles
     ggtitle(
       label = "Micro-distancing trend",
