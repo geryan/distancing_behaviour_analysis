@@ -45,6 +45,13 @@ list(
   ),
 
   tar_target(
+    macro_data,
+    macrodistancing_data(
+      dates = dates
+    )
+  ),
+
+  tar_target(
     pointless_end_target,
     "pointless_end_target"
   )
