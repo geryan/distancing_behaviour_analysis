@@ -11,7 +11,8 @@ tar_option_set(
     "readxl",
     #"greta",
     "ggplot2",
-    "cowplot"
+    "cowplot",
+    "stringr"
   )
 )
 
@@ -31,8 +32,25 @@ list(
   ),
 
   tar_target(
+    raw_mobility_data,
+    download_mobility_data()
+  ),
+
+  tar_target(
+    mobility_data,
+    process_mobility_data(raw_mobility_data)
+  ),
+
+  tar_target(
+    mobility_results,
+    mobility_fit_and_predict(
+      mobility_data
+    )
+  ),
+
+  tar_target(
     micro_dat,
-    microdistancing_data(
+    get_microdistancing_data(
       dates = dates
     )
   ),
@@ -46,7 +64,7 @@ list(
 
   tar_target(
     macro_data,
-    macrodistancing_data(
+    get_macrodistancing_data(
       dates = dates
     )
   ),

@@ -1,4 +1,4 @@
-microdistancing_data <- function(dates = NULL) {
+get_microdistancing_data <- function(dates = NULL) {
 
   # assume adoption of microdistancing follows the same trend as macrodistancing,
   # and that waning starts at the same time, but don't assume it wanes at the same
