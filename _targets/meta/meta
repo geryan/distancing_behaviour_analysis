@@ -1,11 +1,10 @@
 name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
 dates|stem|de88de329fcfe8ea|6d06f481af698ab5|2c530c1562a7fbd1|-1505472729||t20136.1681998023s|s2987b|2987|rds|local|vector|||0.352||
 pointless_end_target|stem|7c93ffb4cac0fc10|5eacf19f89ff2659|2c530c1562a7fbd1|2043494342||t20136.1681998713s|s73b|73|rds|local|vector|||0||
-micro_dat|stem|afc280b1d40371fb|b38b6aac00bcdcf8|806cf2535f76f556|575502298||t20150.2328052826s|s61861b|61861|rds|local|vector|||25.483||
 microdistancing_data|function|a5a841c07ef928c8|||||||||||||||
-micro_results|stem|0fe86d1ca0a4feb8|9f363bb5928d3513|6e33b916f435b869|149839439||t20151.2017161604s|s700b|700|rds|local|vector|||19.549||
 raw_mobility_data|stem|387d131d15d2e615|805438760be8b6c9|d8296af75fe518a0|-99939146||t20154.2336421852s|s69581b|69581|rds|local|vector|||9.899||
 mobility_data|stem|81abebe7df1d29c2|8cf0a22fab87842f|93bfac313afd98ef|-32950945||t20154.2358284087s|s90092b|90092|rds|local|vector|||0.041||
+mobility_results|stem|707655b7f23fd4c6|1638c7d626ba57da|17653cd51027407d|920837843||t20154.2538743724s|s113b|113|rds|local|vector|||38.443|Removed 31 rows containing missing values or values outside the scale rangegeom_point.. Removed 110 rows containing missing values or values outside the scale rangegeom_point.. Removed 2 rows containing missing values or values outside the scale rangegeom_point.. Removed 1 row containing missing values or values outside the scale rangegeom_point.. Using size aesthetic for lines was deprecated in ggplot2 3.4.0.ℹ Please use linewidth instead.. Removed 64 rows containing missing values or values outside the scale rangegeom_point.|
 abbreviate_states|function|4c70a85439302256
 yesno_to_logical|function|e96e9c7ca651ddcc
 gaussian_smooth|function|78b942465e1d18ce
@@ -39,4 +38,5 @@ mobility_fit_and_predict|function|4af1dafe091a9cda
 hygiene_data|function|10c081cbffea0418
 get_macrodistancing_data|function|b142fce958a5c9c1
 get_microdistancing_data|function|a5a841c07ef928c8
-mobility_results|stem|707655b7f23fd4c6|1638c7d626ba57da|17653cd51027407d|920837843||t20154.2538743724s|s113b|113|rds|local|vector|||38.443|Removed 31 rows containing missing values or values outside the scale rangegeom_point.. Removed 110 rows containing missing values or values outside the scale rangegeom_point.. Removed 2 rows containing missing values or values outside the scale rangegeom_point.. Removed 1 row containing missing values or values outside the scale rangegeom_point.. Using size aesthetic for lines was deprecated in ggplot2 3.4.0.ℹ Please use linewidth instead.. Removed 64 rows containing missing values or values outside the scale rangegeom_point.|
+micro_dat|stem|a6c905759c45af0c|996a631c43d62921|283bd7237be223fc|575502298||t20159.1269151967s|s72809b|72809|rds|local|vector|||33.124||
+micro_results|stem|767e020424e5aeae|9f363bb5928d3513|47170d646ea22be7|149839439||t20159.127368155s|s698b|698|rds|local|vector|||39.13||
